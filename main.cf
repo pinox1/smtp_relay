@@ -1,0 +1,11 @@
+compatibility_level = 2
+queue_directory = /var/spool/postfix
+data_directory = /var/lib/postfix
+mail_owner = postfix
+maillog_file = /dev/stdout
+mynetworks = 127.0.0.0/8,192.168.0.0/24,10.0.0.0/24,172.0.0.0/24
+relayhost = example.mail.protection.outlook.com:25
+myhostname = relay.example.com
+setgid_group = postdrop
+inet_protocols = ipv4
+mail_name = example
